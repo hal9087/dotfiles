@@ -13,23 +13,24 @@ function link_test() {
   [[ "$1" -ef "$2" ]] && echo "same file"
 }
 function link_do() {
-  if [ -f "$entry" ];then
+  #if [ -f "$entry" ];then
     e_success "Linking ~/$1."
     ln -sf ${2#$HOME/} ~/
-  fi
+  #fi
 }
 
 # Copy, link, init, etc.
 function do_stuff() {
 
   local base dest skip
-  local files=(~/.tree-dotfiles/$1/*)
+  local files=(~/.tree-dotfiles/$1/.??*)
   # No files? abort.
   if (( ${#files[@]} == 0 )); then return; fi
   # Run _header function only if declared.
   [[ $(declare -f "$1_header") ]] && "$1_header"
   # Iterate over files.
   for file in "${files[@]}"; do
+    echo "${file}"
     base="$(basename $file)"
     dest="$HOME/$base"
     # Run _test function only if declared.
@@ -70,6 +71,10 @@ do_stuff "link"
 if [[ "$backup" ]]; then
   echo -e "\nBackups were moved to ~/${backup_dir#$HOME/}"
 fi
+
+# Source bash_profile
+e_header "Source .bash_profile done!"
+source $HOME/.bash_profile
 
 # All done!
 e_header "All done!"

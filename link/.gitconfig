@@ -1,3 +1,6 @@
+[include]
+    # Unversioned gitconfig file, useful for global user/email settings
+    path = .extra-gitconfig
 [core]
 	autocrlf = false
 	safecrlf = true
