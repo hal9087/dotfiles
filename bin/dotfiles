@@ -72,10 +72,6 @@ if [[ "$backup" ]]; then
   echo -e "\nBackups were moved to ~/${backup_dir#$HOME/}"
 fi
 
-# Source bash_profile
-e_header "Source .bash_profile done!"
-source $HOME/.bash_profile
-
 # All done!
 e_header "All done!"
 
