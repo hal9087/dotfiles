@@ -3,7 +3,10 @@
 Treeweb OS X / Ubuntu dotfiles.
 
 ## More info
+
 [http://dotfiles.github.io/](http://dotfiles.github.io/)
+ 
+[https://github.com/cowboy/dotfiles](https://github.com/cowboy/dotfiles)
 
 ## Install
 
@@ -45,13 +48,18 @@ For extra stuff for git put your directives into file named ```.extra-gitconfig`
 #
 # Extra Exports
 #--------------------#
+
+# MAMP public root folder
 export WWW=/Applications/MAMP/htdocs/
+
+# MAMP php version for the command line
+export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:$PATH
 
 #
 # Extra Aliases
 #----------------#
 
-# Mamp MySql Log
+# MAMP check MySql logs
 alias mysql-mamp-log="tail -f /Applications/MAMP/logs/mysql.log"
 alias mysql-mamp-errorlog="tail -f /Applications/MAMP/logs/mysql_error_log.err"
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo 'Treeweb Install Dotfiles Script - inspired by "Cowboy" Ben Alman - http://benalman.com/'
+echo 'Treeweb Install Dotfiles Script - inspired by Ben "Cowboy" Alman - https://github.com/cowboy/dotfiles'
 
 # Logging stuff.
 function e_header()   { echo -e "\n\033[1m$@\033[0m"; }
