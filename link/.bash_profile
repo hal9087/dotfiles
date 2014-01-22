@@ -8,6 +8,9 @@ unset file
 # init rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+# this loads NVM
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+
 # source GIT autocompletion
 source $HOME/.git-completion.bash
 
