@@ -12,7 +12,7 @@ Treeweb OS X / Ubuntu dotfiles.
 
 $ cd ~
 $ git clone https://bitbucket.org/treeweb/tree-dotfiles.git .tree-dotfiles
-$ .tree-dotfiles/bin/dotfiles
+$ ~/.tree-dotfiles/bin/dotfiles
 $ source ~/.bash_profile
 ```
 
@@ -22,7 +22,7 @@ $ source ~/.bash_profile
 
 $ cd ~/.tree-dotfiles
 $ git pull 
-$ .tree-dotfiles/bin/dotfiles
+$ ~/.tree-dotfiles/bin/dotfiles
 $ source ~/.bash_profile
 ```
 
@@ -54,10 +54,6 @@ export WWW=/Applications/MAMP/htdocs/
 # Mamp MySql Log
 alias mysql-mamp-log="tail -f /Applications/MAMP/logs/mysql.log"
 alias mysql-mamp-errorlog="tail -f /Applications/MAMP/logs/mysql_error_log.err"
-
-# Treeweb
-alias ssh@100="ssh -ltreeweb 192.168.100.100"
-alias ssh@drago="ssh -ltreeweb drago.treeweb.it"
 
 ```
 
