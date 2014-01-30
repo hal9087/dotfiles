@@ -6,6 +6,9 @@
 alias start-jenkins='sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist'
 alias stop-jenkins='sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist'
 
+# Composer
+alias get-composer='curl -sS https://getcomposer.org/installer | php'
+
 # Symfony2
 alias sf2='php app/console'
 
