@@ -53,6 +53,7 @@
     filelog = log -u
     fl = log -u
 
+
     #ai = add --interactive
 
     co = checkout
@@ -69,6 +70,7 @@
     ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
     lc  = "!f() { git ll "$1"^.."$1"; }; f"
     lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+    lgraph = log --graph --oneline
 
     # list confilcted state files
     dfc = diff --name-only --diff-filter=U
