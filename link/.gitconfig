@@ -3,7 +3,7 @@
     path = .extra-gitconfig
 [core]
 	autocrlf = false
-	safecrlf = true
+	safecrlf = false
 	excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes
 [color]
