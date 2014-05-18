@@ -5,12 +5,6 @@ export PATH=/usr/local/sbin:$PATH
 # Local MYSQL version for command line
 export PATH=/usr/local/mysql/bin:$PATH
 
-# Ant
-export ANT_OPTS="-Xmx1024m -XX:MaxPermSize=512m"
-
-# Java
-export JAVA_OPTS="-Xms1024m -Xmx10246m -XX:NewSize=256m -XX:MaxNewSize=356m -XX:PermSize=256m -XX:MaxPermSize=356m"
-
 # Svn
 export SVN_EDITOR=vim
 
