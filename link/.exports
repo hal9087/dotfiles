@@ -23,10 +23,13 @@ export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 #-------------------#
 # Tell ls to be colourful
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# Customize ls colors
+#export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
-export PS1="\[${BOLD}${MAGENTA}\]\u\[$WHITE\]@\[$ORANGE\]\h\[$WHITE\]: [\[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" -\")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]] \$ \[$RESET\]"
+# Bash prompt
+export PS1="\u@\h:[\W\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" -\")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]] \[\e[0;31m\]❯\[\e[m\]\[\e[0;33m\]❯\[\e[m\]\[\e[0;32m\]❯\[\e[m\] \[$RESET\]"
 
