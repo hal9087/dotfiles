@@ -47,6 +47,7 @@
     ci = commit
     cm = commit -m
     cma = commit -a -m
+    cmall = !sh -c 'git add --all && git commit -m \"$0\"'
     ca = commit --amend
     amend = commit --amend
     caa = commit -a --amend -C HEAD
@@ -112,6 +113,10 @@
     cp = cherry-pick
     grep = grep -Ii
     gr = grep -Ii
+
+    # rebase commands
+    rb  = rebase
+    rbh = !sh -c 'git rebase -i HEAD~$0'
 
     # grep from root folder
     gra = "!f() { A=$(pwd) && TOPLEVEL=$(git rev-parse --show-toplevel) && cd $TOPLEVEL && git grep --full-name -In $1 | xargs -I{} echo $TOPLEVEL/{} && cd $A; }; f"
