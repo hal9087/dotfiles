@@ -21,6 +21,14 @@ export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 #
 # COLORS
 #-------------------#
+
+# PS1 COLORS
+reset="\[\e[m\]";
+redtext="\[\e[0;31m\]"
+greentext="\[\e[0;32m\]";
+yellowtext="\[\e[0;33m\]";
+whiteboldtext="\[\e[1;97m\]"
+
 # Tell ls to be colourful
 export CLICOLOR=1
 
@@ -31,5 +39,5 @@ export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 
 # Bash prompt
-export PS1="\u@\h:[\W\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" -\")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]] \[\e[0;31m\]❯\[\e[m\]\[\e[0;33m\]❯\[\e[m\]\[\e[0;32m\]❯\[\e[m\] \[$RESET\]"
+export PS1="${whiteboldtext}\u@\h:[\W\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" -\")\$(parse_git_branch)] ${redtext}❯${reset}${yellowtext}❯${reset}${greentext}❯${reset}${reset} "
 
