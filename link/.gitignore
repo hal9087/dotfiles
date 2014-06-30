@@ -16,6 +16,9 @@
 #
 #
 
+# -- Bower -- #
+*bower_components
+
 # -- Npm -- #
 
 *node_modules
