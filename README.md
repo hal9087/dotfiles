@@ -1,6 +1,6 @@
 # Dotfiles
 
-Treeweb OS X / Ubuntu dotfiles.
+OS X / Ubuntu dotfiles.
 
 ## More info
 
@@ -14,8 +14,8 @@ Treeweb OS X / Ubuntu dotfiles.
 #!shell
 
 $ cd ~
-$ git clone https://bitbucket.org/treeweb/tree-dotfiles.git .tree-dotfiles
-$ ~/.tree-dotfiles/bin/dotfiles
+$ git clone https://github.com/hal9087/dotfiles.git .dotfiles
+$ ~/.dotfiles/bin/dotfiles
 $ source ~/.bash_profile
 ```
 
@@ -23,9 +23,9 @@ $ source ~/.bash_profile
 ```
 #!shell
 
-$ cd ~/.tree-dotfiles
+$ cd ~/.dotfiles
 $ git pull 
-$ ~/.tree-dotfiles/bin/dotfiles
+$ ~/.dotfiles/bin/dotfiles
 $ source ~/.bash_profile
 ```
 

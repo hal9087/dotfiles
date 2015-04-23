@@ -2,16 +2,6 @@
 # Aliases
 #----------------
 
-# Jenkins
-alias start-jenkins='sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist'
-alias stop-jenkins='sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist'
-
-# Composer
-alias get-composer='curl -sS https://getcomposer.org/installer | php'
-
-# Symfony2
-alias sf2='php app/console'
-
 # directory/file stuff
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -59,14 +49,14 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
-# Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
 
 # Recursively delete `.DS_Store` files
+# @todo Move to OSX only
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # File size
 alias fs="stat -f \"%z bytes\""
 
+# @todo Move toOSX only
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"

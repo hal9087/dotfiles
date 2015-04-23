@@ -27,6 +27,7 @@
 
 *~
 *.lock
+!composer.lock
 
 # -- Compiled source  -- #
 
