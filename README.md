@@ -14,7 +14,7 @@ OS X / Ubuntu dotfiles.
 #!shell
 
 $ cd ~
-$ git clone https://github.com/hal9087/dotfiles.git .dotfiles
+$ git clone https://github.com/rbarilani/dotfiles.git .dotfiles
 $ ~/.dotfiles/bin/dotfiles
 $ source ~/.bash_profile
 ```
