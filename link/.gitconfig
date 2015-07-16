@@ -147,3 +147,6 @@
 
     # list remotes
     rem="!git config -l | grep remote.*url | tail -n +2"
+
+		# housekeeping (clean up)
+		clean-bra= remote prune origin
