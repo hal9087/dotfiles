@@ -1,7 +1,15 @@
+# 1.1.3 (2015-11-13)
+
+- fix: remove Icons? from .gitignore
+- adds clean-bra git alias
+
+# 1.1.2
+
+- remove text=auto to avoid conflict with line endings
+
 # 1.1.1 (2015-06-07)
 
 - d80dda6 renames github user [Ruben Barilani]
-
 
 # 1.1.0 (2015-06-07)
 
