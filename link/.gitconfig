@@ -149,4 +149,7 @@
     rem="!git config -l | grep remote.*url | tail -n +2"
 
 		# housekeeping (clean up)
-		clean-bra= remote prune origin
+		clean-bra = remote prune origin
+
+    # help me
+    help-me = !sh -c 'git log > /dev/null && printf \"/code\" && printf \"\n-------- status --------\n\n\" && git status && printf \"\n-------- branch --------\n\n\" && git branch && printf \"\n-------- log --------\n\n\" && git ls -n 5 && printf \"\n\"'
