@@ -1,3 +1,7 @@
+# 1.2.0 (2015-11-17)
+
+- add help-me git alias
+
 # 1.1.3 (2015-11-13)
 
 - fix: remove Icons? from .gitignore
