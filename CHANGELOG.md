@@ -1,3 +1,7 @@
+# 1.3.0 (2016-05-21)
+
+- updates .gitignore
+
 # 1.2.0 (2015-11-17)
 
 - add help-me git alias
