@@ -1,6 +1,6 @@
 # Dotfiles
 
-OS X / Ubuntu dotfiles.
+My OS X / Linux dotfiles.
 
 ## More info
 
@@ -39,30 +39,19 @@ For extra stuff for git put your directives into file named ```.extra-gitconfig`
 #!shell
 [user]
     name = Ruben Barilani
-    email = ruben.barilani.dev@gmail.com
+    email = ruben@barilani.com
 ```
 
 #### (EXAMPLE) my ~/.extra
 ```
-#!shell
-#
-# Extra Exports
-#--------------------#
+# NVM
+if [ -s ~/.nvm/nvm.sh ]; then
+   NVM_DIR=~/.nvm
+   source ~/.nvm/nvm.sh
+fi
 
-# MAMP public root folder
-export WWW=/Applications/MAMP/htdocs/
-
-# MAMP php version for the command line
-export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:$PATH
-
-#
-# Extra Aliases
-#----------------#
-
-# MAMP check MySql logs
-alias mysql-mamp-log="tail -f /Applications/MAMP/logs/mysql.log"
-alias mysql-mamp-errorlog="tail -f /Applications/MAMP/logs/mysql_error_log.err"
-
+# GOLANG BINARIES
+PATH="$PATH:$HOME/go/bin"
 ```
 
 
