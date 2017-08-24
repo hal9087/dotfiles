@@ -39,5 +39,4 @@ export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 
 # Bash prompt
-export PS1="${whiteboldtext}\u@\h:[\W\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" -\")\$(parse_git_branch)] ${redtext}❯${reset}${yellowtext}❯${reset}${greentext}❯${reset}${reset} "
-
+export PS1="${whiteboldtext}\W\$([[ -n \$(git branch 2> /dev/null) ]] && echo \":\")\$(parse_git_branch) ${redtext}❯${reset}${yellowtext}❯${reset}${greentext}❯${reset}${reset} "
