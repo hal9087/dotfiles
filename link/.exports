@@ -30,10 +30,10 @@ yellowtext="\[\e[0;33m\]";
 whiteboldtext="\[\e[1;97m\]"
 
 # Tell ls to be colourful
-export CLICOLOR=1
+# export CLICOLOR=1
 
 # Customize ls colors
-#export LSCOLORS=GxFxCxDxBxegedabagaced
+export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
