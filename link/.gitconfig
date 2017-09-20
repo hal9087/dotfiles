@@ -141,6 +141,10 @@
     lasttag = describe --tags --abbrev=0
     lt = describe --tags --abbrev=0
 
+    # fetch
+    # $1 - pull request id
+    fetch-pr = "!f() { git fetch origin pull/$1/head:pr-$1; }; f"
+
     # merges
     ours = "!f() { git co --ours $@ && git add $@; }; f"
     theirs = "!f() { git co --theirs $@ && git add $@; }; f"
@@ -148,8 +152,8 @@
     # list remotes
     rem="!git config -l | grep remote.*url | tail -n +2"
 
-		# housekeeping (clean up)
-		clean-bra = remote prune origin
+    # housekeeping (clean up)
+    clean-bra = "!f() { git remote prune origin && git branch | grep -v \"master\" | xargs git branch -D; }; f"
 
     # help me
     help-me = !sh -c 'git log > /dev/null && printf \"/code\" && printf \"\n-------- status --------\n\n\" && git status && printf \"\n-------- branch --------\n\n\" && git branch && printf \"\n-------- log --------\n\n\" && git ls -n 5 && printf \"\n\"'
